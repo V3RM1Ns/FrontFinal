@@ -17,12 +17,12 @@ a{
 }
 .site-header{
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     height: 97px;
     background-color: wheat;
 }
 .logo-link{
-    padding-left: 100px;
+    padding-left: 150px;
 }
 .main-menu{
     position: relative;
@@ -31,5 +31,52 @@ a{
 .menu-list{
     position: absolute;
     bottom: 15px;
-    right: 30px;
+    right: 90px;
+    font-size: 18px;
+
+}
+.menu-item{
+    width: 80px;
+}
+.contact-item{
+    position: absolute;
+    left:390px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 40px;
+    white-space: nowrap;
+}
+.contact-bar{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-left: 30px;
+}
+.contact-item2{
+    position: absolute;
+    left: 590px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 40px;
+    white-space: nowrap;
+}
+.contact-item3 {
+    position: absolute;
+    right: 120px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+.line{
+    position: absolute;
+    right: 128px;
+    top: 50px;
+    background-color: black;
 }
