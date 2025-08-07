@@ -5,13 +5,13 @@
 }
 
 /* Tüm linklerin genel stili */
-a, 
+a,
 a:link,
 a:visited,
 a:hover,
 a:active {
     text-decoration: none !important;
-    color: white 
+    color: white
 }
 
 /* Font Awesome ikonları için stil */
@@ -123,4 +123,8 @@ a:active {
     height: 100vh;
     object-fit: cover;
     width: 100%;
+}
+.house{
+    position: relative;
+
 }
