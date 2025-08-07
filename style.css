@@ -3,6 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Tüm linklerin genel stili */
+a, 
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none !important;
+    color: white 
+}
+
+/* Font Awesome ikonları için stil */
+.fa-solid {
+    color: white;
+}
+
+/* Contact item'lar için text rengi */
+.contact-item,
+.contact-item2,
+.contact-item3,
+.contact-item span,
+.contact-item2 span,
+.contact-item3 span {
+    color: white;
+}
+
 .menu-list{
     display: flex;
     flex-direction: row;
@@ -11,15 +37,16 @@
     list-style: none;
     margin-right: 20px;
 }
-a{
-    text-decoration: none;
-    color: red;
-}
 .site-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     flex-direction: row;
     height: 97px;
-    background-color: wheat;
+    background-color: #20242b3b;
 }
 .logo-link{
     padding-left: 150px;
@@ -30,7 +57,7 @@ a{
 }
 .menu-list{
     position: absolute;
-    bottom: 15px;
+    top: 60px;
     right: 90px;
     font-size: 18px;
 
@@ -58,7 +85,7 @@ a{
 .contact-item2{
     position: absolute;
     left: 590px;
-    top: 20px;
+    top: 17px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -78,5 +105,22 @@ a{
     position: absolute;
     right: 128px;
     top: 50px;
-    background-color: black;
+    background-color: rgb(105 120 134);
+}
+.main-content {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
 }
