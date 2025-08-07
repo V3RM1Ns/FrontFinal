@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Tüm linklerin genel stili */
 a,
 a:link,
 a:visited,
@@ -14,12 +13,10 @@ a:active {
     color: white
 }
 
-/* Font Awesome ikonları için stil */
 .fa-solid {
     color: white;
 }
 
-/* Contact item'lar için text rengi */
 .contact-item,
 .contact-item2,
 .contact-item3,
@@ -125,6 +122,174 @@ a:active {
     width: 100%;
 }
 .house{
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    gap: 40px;
+}
 
+.left-house {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-house {
+    flex: 1;
+}
+
+.right-house img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.house-top {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    overflow: visible;
+}
+
+.background-text {
+    position: absolute;
+    font-size: 180px;  /* Boyutu küçülttüm */
+    color: rgba(153, 156, 169, 0.08);
+    font-weight: 900;
+    z-index: -1;
+    top: -70px;  /* Yukarı kaldırdım */
+    left: -150px;
+    letter-spacing: 15px;  /* Harfler arası boşluğu da biraz azalttım */
+    text-transform: uppercase;
+    width: 200%;  /* Genişliği yeterli olacak */
+    white-space: nowrap;
+}
+
+.house-top .location-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.house-top .location-title i {
+    color: #878fd6;
+    font-size: 40px;
+}
+
+.house-top h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.house-top h1 a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.house-top h1 a:hover {
+    color: #878fd6;
+}
+
+.house-top .location-address {
+    color: #999ca9;
+    margin: 0;
+}
+
+.house-middle p {
+    color: #ef595a;
+}
+
+.house-middle2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.house-middle2 .fa-square {
+    color: #ef595a;
+}
+
+.house-middle2 p {
+    color: #999ca9;
+}
+
+.top1, .bottom1 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    max-width: 600px;
+}
+
+.top1 > div, .bottom1 > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.top1 p, .bottom1 p {
+    margin: 0;
+    color: #999ca9;
+}
+
+.house-bottom {
+    display: flex;
+    align-items: center;
+    gap: 30px;  /* Fiyat ve info arasındaki boşluğu azalttım */
+    margin-top: 30px;
+}
+
+.price {
+    background-color: #ef595a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.price p {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price sup {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 15px;  /* İkonlar arası boşluğu artırdım */
+}
+
+.info i {
+    color: #999ca9;
+    font-size: 18px;
+}
+
+.info span p {
+    margin: 0;
+    color: #ef595a;  /* Kırmızı renk */
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Responsive styles for house section */
+@media (max-width: 768px) {
+    .house {
+        flex-direction: column-reverse;
+    }
+    
+    .right-house {
+        margin-bottom: 20px;
+    }
 }
