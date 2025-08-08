@@ -4,310 +4,358 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estate</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header class="site-header">
-        <!-- Logo -->
-        <div class="logo-wrapper">
-            <a href="#" class="logo-link">
-                <img src="https://estate.axiomthemes.com/wp-content/uploads/logo-header1.jpg" alt="Logo" class="logo-image">
-            </a>
+<header class="site-header">
+    <div class="logo-wrapper">
+        <a href="#" class="logo-link">
+            <img src="https://estate.axiomthemes.com/wp-content/uploads/logo-header1.jpg" alt="Logo" class="logo-image">
+        </a>
+    </div>
+
+    <div class="contact-bar">
+        <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>121 King Street, NY, USA</span>
+        </div>
+        <div class="contact-item2">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:contact@gmail.com">contact@gmail.com</a>
+        </div>
+        <div class="contact-item3">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call Us: </span>
+            <a href="tel:8001234567" class="phone-link">800 123 45 67</a>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <nav class="main-menu">
+        <ul class="menu-list">
+            <li class="menu-item dropdown">
+                <a href="#home" class="dropdown-toggle">
+                    Home <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                    <li><a class="dropdown-item" href="#home-main">Main Page</a></li>
+                    <li><a class="dropdown-item" href="#home-modern">Modern Style</a></li>
+                    <li><a class="dropdown-item" href="#home-classic">Classic Style</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item dropdown">
+                <a href="#features" class="dropdown-toggle">
+                    Features <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                    <li><a class="dropdown-item" href="#property-search">Property Search</a></li>
+                    <li><a class="dropdown-item" href="#virtual-tour">Virtual Tours</a></li>
+                    <li><a class="dropdown-item" href="#mortgage-calc">Mortgage Calculator</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item dropdown">
+                <a href="#about" class="dropdown-toggle">
+                    About Us <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                    <li><a class="dropdown-item" href="#our-story">Our Story</a></li>
+                    <li><a class="dropdown-item" href="#team">Our Team</a></li>
+                    <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item dropdown">
+                <a href="#listing" class="dropdown-toggle">
+                    Listing <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                    <li><a class="dropdown-item" href="#for-sale">For Sale</a></li>
+                    <li><a class="dropdown-item" href="#for-rent">For Rent</a></li>
+                    <li><a class="dropdown-item" href="#commercial">Commercial</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item dropdown">
+                <a href="#gallery" class="dropdown-toggle">
+                    Gallery <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                    <li><a class="dropdown-item" href="#property-photos">Property Photos</a></li>
+                    <li><a class="dropdown-item" href="#video-tours">Video Tours</a></li>
+                    <li><a class="dropdown-item" href="#360-views">360° Views</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item dropdown">
+                <a href="#blog" class="dropdown-toggle">
+                    Blog <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                    <li><a class="dropdown-item" href="#latest-news">Latest News</a></li>
+                    <li><a class="dropdown-item" href="#market-trends">Market Trends</a></li>
+                    <li><a class="dropdown-item" href="#buying-tips">Buying Tips</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-item">
+                <a href="#contacts">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main-content">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
         </div>
 
-        <!-- Contact Information -->
-        <div class="contact-bar">
-            <div class="contact-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>121 King Street, NY, USA</span>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://estate.axiomthemes.com/wp-content/uploads/image-7-1-770x460.jpg"
+                     class="d-block w-100" alt="Estate Image 1">
             </div>
-            <div class="contact-item2">
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:contact@gmail.com">contact@gmail.com</a>
+            <div class="carousel-item">
+                <img src="https://estate.axiomthemes.com/wp-content/uploads/image-12-1-770x460.jpg"
+                     class="d-block w-100" alt="Estate Image 2">
             </div>
-            <div class="contact-item3">
-                <i class="fa-solid fa-phone"></i>
-                <span>Call Us: </span>
-                <a href="tel:8001234567" class="phone-link">800 123 45 67</a>
+            <div class="carousel-item">
+                <img src="https://estate.axiomthemes.com/wp-content/uploads/image-11-1-770x460.jpg"
+                     class="d-block w-100" alt="Estate Image 3">
             </div>
         </div>
 
-        <div class="line"></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-        <!-- Navigation Menu -->
-        <nav class="main-menu">
-            <ul class="menu-list">
-                <li class="menu-item dropdown">
-                    <a href="#home" class="dropdown-toggle">
-                        Home <i class="fa-solid fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu custom-dropdown-menu">
-                        <li><a class="dropdown-item" href="#home-main">Main Page</a></li>
-                        <li><a class="dropdown-item" href="#home-modern">Modern Style</a></li>
-                        <li><a class="dropdown-item" href="#home-classic">Classic Style</a></li>
-                    </ul>
-                </li>
-                
-                <li class="menu-item dropdown">
-                    <a href="#features" class="dropdown-toggle">
-                        Features <i class="fa-solid fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu custom-dropdown-menu">
-                        <li><a class="dropdown-item" href="#property-search">Property Search</a></li>
-                        <li><a class="dropdown-item" href="#virtual-tour">Virtual Tours</a></li>
-                        <li><a class="dropdown-item" href="#mortgage-calc">Mortgage Calculator</a></li>
-                    </ul>
-                </li>
-                
-                <li class="menu-item dropdown">
-                    <a href="#about" class="dropdown-toggle">
-                        About Us <i class="fa-solid fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu custom-dropdown-menu">
-                        <li><a class="dropdown-item" href="#our-story">Our Story</a></li>
-                        <li><a class="dropdown-item" href="#team">Our Team</a></li>
-                        <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
-                    </ul>
-                </li>
-                
-                <li class="menu-item dropdown">
-                    <a href="#listing" class="dropdown-toggle">
-                        Listing <i class="fa-solid fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu custom-dropdown-menu">
-                        <li><a class="dropdown-item" href="#for-sale">For Sale</a></li>
-                        <li><a class="dropdown-item" href="#for-rent">For Rent</a></li>
-                        <li><a class="dropdown-item" href="#commercial">Commercial</a></li>
-                    </ul>
-                </li>
-                
-                <li class="menu-item dropdown">
-                    <a href="#gallery" class="dropdown-toggle">
-                        Gallery <i class="fa-solid fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu custom-dropdown-menu">
-                        <li><a class="dropdown-item" href="#property-photos">Property Photos</a></li>
-                        <li><a class="dropdown-item" href="#video-tours">Video Tours</a></li>
-                        <li><a class="dropdown-item" href="#360-views">360° Views</a></li>
-                    </ul>
-                </li>
-                
-                <li class="menu-item dropdown">
-                    <a href="#blog" class="dropdown-toggle">
-                        Blog <i class="fa-solid fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu custom-dropdown-menu">
-                        <li><a class="dropdown-item" href="#latest-news">Latest News</a></li>
-                        <li><a class="dropdown-item" href="#market-trends">Market Trends</a></li>
-                        <li><a class="dropdown-item" href="#buying-tips">Buying Tips</a></li>
-                    </ul>
-                </li>
-                
-                <li class="menu-item">
-                    <a href="#contacts">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Image Carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" 
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" 
-                        aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" 
-                        aria-label="Slide 3"></button>
+    <section class="house">
+        <div class="left-house">
+            <div class="house-top">
+                <span class="background-text">FEATUR</span>
+                <div class="location-title">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h1><a href="#">87 Mishaum Point Rd,</a></h1>
+                </div>
+                <p class="location-address">Dartmouth, MA 02748</p>
             </div>
-            
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://estate.axiomthemes.com/wp-content/uploads/image-7-1-770x460.jpg" 
-                         class="d-block w-100" alt="Estate Image 1">
+
+            <div class="house-middle">
+                <p>On the best lot at Phuket is situated the Kailua Residence. It features Ipe hardwood flooring
+                    on the interior and granite stone flooring on the lanais, high vaulted cedar ceilings.</p>
+            </div>
+
+            <div class="house-middle2">
+                <div class="top1">
+                    <div>
+                        <i class="fa-solid fa-square"></i>
+                        <p>Quiet Neighbourhood</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-square"></i>
+                        <p>Fabulous Views</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://estate.axiomthemes.com/wp-content/uploads/image-12-1-770x460.jpg" 
-                         class="d-block w-100" alt="Estate Image 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://estate.axiomthemes.com/wp-content/uploads/image-11-1-770x460.jpg" 
-                         class="d-block w-100" alt="Estate Image 3">
+                <div class="bottom1">
+                    <div>
+                        <i class="fa-solid fa-square"></i>
+                        <p>Great Local Community</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-square"></i>
+                        <p>Large Play Center In Yard</p>
+                    </div>
                 </div>
             </div>
-            
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+
+            <div class="house-bottom">
+                <div class="price">
+                    <p style="font-weight:200"><sup>$</sup><a href="#property-details">1,249,000</a></p>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-square-parking"></i>
+                    <span><p>1,286 sqft</p></span>
+                    <i class="fa-solid fa-bed"></i>
+                    <span><p>2</p></span>
+                    <i class="fa-solid fa-bath"></i>
+                    <span><p>2</p></span>
+                    <i class="fa-solid fa-car"></i>
+                    <span><p>1</p></span>
+                </div>
+            </div>
         </div>
-        
-        <!-- Featured Property Section -->
-        <section class="house">
-            <div class="left-house">
-                <div class="house-top">
-                    <span class="background-text">FEATUR</span>
-                    <div class="location-title">
+
+        <div class="right-house">
+            <img src="https://estate.axiomthemes.com/wp-content/uploads/image-7-1-570x414.jpg" alt="House Image">
+        </div>
+    </section>
+
+    <section class="recent">
+        <h4><b>RECENT PROPERTIES</b></h4>
+
+        <div class="cards">
+            <div class="card" style="width: 22rem; height: 380px;">
+                <div class="card-image-container">
+                    <img src="https://estate.axiomthemes.com/wp-content/uploads/image-7-1-770x460.jpg" class="card-img-top" alt="Property Image 1">
+                    <div class="price-tag">$850,000</div>
+                    <div class="sale-tag">House For Sale</div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
                         <i class="fa-solid fa-location-dot"></i>
-                        <h1><a href="#">87 Mishaum Point Rd,</a></h1>
-                    </div>
-                    <p class="location-address">Dartmouth, MA 02748</p>
-                </div>
-                
-                <div class="house-middle">
-                    <p>On the best lot at Phuket is situated the Kailua Residence. It features Ipe hardwood flooring 
-                       on the interior and granite stone flooring on the lanais, high vaulted cedar ceilings.</p>
-                </div>
-                
-                <div class="house-middle2">
-                    <div class="top1">
-                        <div>
-                            <i class="fa-solid fa-square"></i>
-                            <p>Quiet Neighbourhood</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-square"></i>
-                            <p>Fabulous Views</p>
-                        </div>
-                    </div>
-                    <div class="bottom1">
-                        <div>
-                            <i class="fa-solid fa-square"></i>
-                            <p>Great Local Community</p>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-square"></i>
-                            <p>Large Play Center In Yard</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="house-bottom">
-                    <div class="price">
-                        <p style="font-weight:200"><sup>$</sup><a href="#property-details">1,249,000</a></p>
-                    </div>
-                    <div class="info">
+                        <a href="">87 Mishaum Point Rd</a>
+                    </h5>
+                    <p class="location-address">La Quinta, CA 32453</p>
+                    <hr class="card-divider">
+                    <div class="card-info">
                         <i class="fa-solid fa-square-parking"></i>
-                        <span><p>1,286 sqft</p></span>
+                        <span>1,286 sqft</span>
                         <i class="fa-solid fa-bed"></i>
-                        <span><p>2</p></span>
+                        <span>2</span>
                         <i class="fa-solid fa-bath"></i>
-                        <span><p>2</p></span>
+                        <span>2</span>
                         <i class="fa-solid fa-car"></i>
-                        <span><p>1</p></span>
+                        <span>1</span>
                     </div>
                 </div>
             </div>
 
-            <div class="right-house">
-                <img src="https://estate.axiomthemes.com/wp-content/uploads/image-7-1-570x414.jpg" alt="House Image">
+            <div class="card" style="width: 22rem; height: 380px;">
+                <div class="card-image-container">
+                    <img src="https://estate.axiomthemes.com/wp-content/uploads/image-12-1-770x460.jpg" class="card-img-top" alt="Property Image 2">
+                    <div class="price-tag">$650,000</div>
+                    <div class="sale-tag">House For Sale</div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="">9615 Shore Rd APT BA</a>
+                    </h5>
+                    <p class="location-address">Brooklyn, NY 11209</p>
+                    <hr class="card-divider">
+                    <div class="card-info">
+                        <i class="fa-solid fa-square-parking"></i>
+                        <span>950 sqft</span>
+                        <i class="fa-solid fa-bed"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-bath"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-car"></i>
+                        <span>1</span>
+                    </div>
+                </div>
             </div>
-        </section>
-        
-        <!-- Recent Properties Section -->
-        <section class="recent">
-            <h4><b>RECENT PROPERTIES</b></h4>
 
-            <div class="cards">
-                <div class="card" style="width: 22rem; height: 380px;">
-                    <div class="card-image-container">
-                        <img src="https://estate.axiomthemes.com/wp-content/uploads/image-7-1-770x460.jpg" class="card-img-top" alt="Property Image 1">
-                        <div class="price-tag">$850,000</div>
-                        <div class="sale-tag">House For Sale</div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <a href="">87 Mishaum Point Rd</a>
-                        </h5>
-                        <p class="location-address">La Quinta, CA 32453</p>
-                        <hr class="card-divider">
-                        <div class="card-info">
-                            <i class="fa-solid fa-square-parking"></i>
-                            <span>1,286 sqft</span>
-                            <i class="fa-solid fa-bed"></i>
-                            <span>2</span>
-                            <i class="fa-solid fa-bath"></i>
-                            <span>2</span>
-                            <i class="fa-solid fa-car"></i>
-                            <span>1</span>
-                        </div>
+            <div class="card" style="width: 22rem; height: 380px;">
+                <div class="card-image-container">
+                    <img src="https://estate.axiomthemes.com/wp-content/uploads/image-11-1-770x460.jpg" class="card-img-top" alt="Property Image 3">
+                    <div class="price-tag">$750,000</div>
+                    <div class="sale-tag">House For Sale</div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="">80646 Via Pessaro</a>
+                    </h5>
+                    <p class="location-address">Dartmouth, MA 02748</p>
+                    <hr class="card-divider">
+                    <div class="card-info">
+                        <i class="fa-solid fa-square-parking"></i>
+                        <span>1,450 sqft</span>
+                        <i class="fa-solid fa-bed"></i>
+                        <span>3</span>
+                        <i class="fa-solid fa-bath"></i>
+                        <span>2</span>
+                        <i class="fa-solid fa-car"></i>
+                        <span>2</span>
                     </div>
                 </div>
-
-                <div class="card" style="width: 22rem; height: 380px;">
-                    <div class="card-image-container">
-                        <img src="https://estate.axiomthemes.com/wp-content/uploads/image-12-1-770x460.jpg" class="card-img-top" alt="Property Image 2">
-                        <div class="price-tag">$650,000</div>
-                        <div class="sale-tag">House For Sale</div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <a href="">9615 Shore Rd APT BA</a>
-                        </h5>
-                        <p class="location-address">Brooklyn, NY 11209</p>
-                        <hr class="card-divider">
-                        <div class="card-info">
-                            <i class="fa-solid fa-square-parking"></i>
-                            <span>950 sqft</span>
-                            <i class="fa-solid fa-bed"></i>
-                            <span>1</span>
-                            <i class="fa-solid fa-bath"></i>
-                            <span>1</span>
-                            <i class="fa-solid fa-car"></i>
-                            <span>1</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 22rem; height: 380px;">
-                    <div class="card-image-container">
-                        <img src="https://estate.axiomthemes.com/wp-content/uploads/image-11-1-770x460.jpg" class="card-img-top" alt="Property Image 3">
-                        <div class="price-tag">$750,000</div>
-                        <div class="sale-tag">House For Sale</div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <a href="">80646 Via Pessaro</a>
-                        </h5>
-                        <p class="location-address">Dartmouth, MA 02748</p>
-                        <hr class="card-divider">
-                        <div class="card-info">
-                            <i class="fa-solid fa-square-parking"></i>
-                            <span>1,450 sqft</span>
-                            <i class="fa-solid fa-bed"></i>
-                            <span>3</span>
-                            <i class="fa-solid fa-bath"></i>
-                            <span>2</span>
-                            <i class="fa-solid fa-car"></i>
-                            <span>2</span>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
-        </section>
-
-
-        <!-- Info Section -->
-        <div class="info">
-            
         </div>
-    </main>
+    </section>
 
-    <script src="script.js"></script>
+    <div class="infoz">
+        <div class="imgi">
+            <div class="icons">
+                <div class="square-container">
+                    <div class="square">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="property-info">
+                        <a href="#" class="property-link">Best property lists</a>
+                        <p class="property-description">We provide consumers with a content-rich listings in a handy format.</p>
+                    </div>
+                </div>
+                <div class="square-container">
+                    <div class="square">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <div class="property-info">
+                        <a href="#" class="property-link">Quality Service</a>
+                        <p class="property-description">Professional and reliable real estate services for all your needs.</p>
+                    </div>
+                </div>
+                <div class="square-container">
+                    <div class="square">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <div class="property-info">
+                        <a href="#" class="property-link">Award Winning</a>
+                        <p class="property-description">Recognized excellence in real estate industry standards.</p>
+                    </div>
+                </div>
+                <div class="square-container">
+                    <div class="square">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="property-info">
+                        <a href="#" class="property-link">Market Analysis</a>
+                        <p class="property-description">Comprehensive market insights and property value analysis.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    
+    
+    <div class="download">
+        <div class="left">
+            <span class="download-background-text">MOBIL</span>
+            <h1>Search Best Deals <span style="color: #ef595a">on Go</span></h1>
+            <p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
+            <div class="app-links">
+                <a href=""><img src="https://estate.axiomthemes.com/wp-content/uploads/img_b2.png" alt=""></a>
+                <a href=""><img src="https://estate.axiomthemes.com/wp-content/uploads/img_b1.png" alt=""></a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="https://estate.axiomthemes.com/wp-content/uploads/img_mobile.png" alt="">
+        </div>
+    </div>
+</main>
+
+
 </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>

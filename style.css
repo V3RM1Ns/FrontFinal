@@ -32,7 +32,7 @@ a:active {
 }
 .menu-list li{
     list-style: none;
-    margin-right: 15px; 
+    margin-right: 15px;
 }
 .site-header{
     position: absolute;
@@ -57,12 +57,12 @@ a:active {
     position: absolute;
     top: 60px;
     right: 120px;
-    font-size: 14px; 
+    font-size: 14px;
 
 }
 .menu-item {
     width: auto;
-    min-width: 80px; 
+    min-width: 80px;
 }
 .contact-item{
     position: absolute;
@@ -83,8 +83,8 @@ a:active {
 }
 .contact-item2{
     position: absolute;
-    left: 650px; 
-    top: 20px; 
+    left: 650px;
+    top: 20px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -176,15 +176,15 @@ a:active {
 
 .background-text {
     position: absolute;
-    font-size: 180px; 
+    font-size: 180px;
     color: rgba(153, 156, 169, 0.08);
     font-weight: 900;
     z-index: -1;
-    top: -70px; 
+    top: -70px;
     left: -150px;
-    letter-spacing: 15px; 
+    letter-spacing: 15px;
     text-transform: uppercase;
-    width: 200%; 
+    width: 200%;
     white-space: nowrap;
 }
 
@@ -288,7 +288,7 @@ a:active {
 .info {
     display: flex;
     align-items: center;
-    gap: 15px;  
+    gap: 15px;
 }
 
 .info i {
@@ -298,7 +298,7 @@ a:active {
 
 .info span p {
     margin: 0;
-    color: #ef595a; 
+    color: #ef595a;
     font-weight: 500;
     font-size: 16px;
 }
@@ -352,11 +352,11 @@ a:active {
 
 .menu-item {
     width: auto;
-    min-width: 80px; 
+    min-width: 80px;
 }
 
 .custom-dropdown-menu {
-    background-color: rgba(80, 78, 88, 0.8) !important; 
+    background-color: rgba(80, 78, 88, 0.8) !important;
     border: none;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     margin-top: 0;
@@ -375,7 +375,7 @@ a:active {
 
 .custom-dropdown-menu .dropdown-item:hover,
 .custom-dropdown-menu .dropdown-item:focus {
-    background-color: #868fd6 !important; 
+    background-color: #868fd6 !important;
     color: #fff;
     transform: translateX(5px);
 }
@@ -428,7 +428,7 @@ a:active {
     height: 370px;
     background-color: red;
     position: absolute;
-    
+
 }
 
 .imgc{
@@ -440,14 +440,14 @@ a:active {
 .imgc img{
     height: 230px;
     width: 340px;
-    
+
 }
 
 @media (max-width: 768px) {
     .house {
         flex-direction: column-reverse;
     }
-    
+
     .right-house {
         margin-bottom: 20px;
     }
@@ -473,7 +473,7 @@ a:active {
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
-.price p a {
+.price p {
     color: white;
     text-decoration: none;
 }
@@ -583,4 +583,205 @@ a:active {
 
 .card-body {
     padding-top: 25px;
+}
+.imgi {
+    width: 100%;
+    height: 547px;
+    background-image: url("https://estate.axiomthemes.com/wp-content/uploads/img_map.jpg");
+    background-attachment: fixed;
+}
+
+.infoz {
+    height: 548px;
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgi {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.icons {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 90px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.square:hover {
+    background-color: #3aceb3;
+    transform: rotate(45deg) scale(1.1);
+}
+
+.square i {
+    transform: rotate(-45deg);
+    font-size: 28px;
+    color: #3aceb3;
+    transition: all 0.3s ease;
+}
+
+.square:hover i {
+    color: white;
+    transform: rotate(-45deg) scale(1.1);
+}
+
+.square-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.property-info {
+    text-align: center;
+    margin-top: 30px;
+    max-width: 200px;
+}
+
+.property-link {
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.property-link:hover {
+    color: #3aceb3;
+}
+
+.property-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* Download Section */
+.download {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    background-color: white;
+  
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    position: relative;
+    background-image: url("https://estate.axiomthemes.com/wp-content/uploads/img_bg01.png?id=837");
+}
+
+.download .left {
+    flex: 1.2;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.download-background-text {
+    position: absolute;
+    font-size: 180px;
+    color: rgba(153, 156, 169, 0.08);
+    font-weight: 900;
+    z-index: -1;
+    top: -70px;
+    left: -20px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.download .left h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    white-space: nowrap;
+    letter-spacing: 2px;
+}
+
+.download .left h1 span {
+    color: #ef595a;
+    font-weight: 400;
+}
+
+.download .left p {
+    font-size: 18px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    max-width: 500px;
+    text-align: justify;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.download .left .app-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.download .left .app-links a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.download .left .app-links a:hover {
+    transform: translateY(-3px);
+}
+
+.download .left .app-links img {
+    height: 60px;
+    width: auto;
+}
+
+.download .right {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.download .right img {
+    width: 570px;
+    height: 600px;
+    object-fit: contain;
 }
