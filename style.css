@@ -839,7 +839,7 @@ a:active {
     height: 17px;
     color: white;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 5px;
    
     display: flex;
@@ -859,4 +859,231 @@ a:active {
     justify-content: center;
     letter-spacing: 1px;
     white-space: nowrap;
+}
+.search{
+    height: 180px;
+    width: 100%;
+    background-color: #5ac4b1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.search p {
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0;
+    white-space: nowrap;
+    letter-spacing: 2px;
+}
+
+.search .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    padding: 12px 120px 12px 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 896px;
+    height: 54px;
+    
+    outline: none;
+}
+
+.search input::placeholder {
+    color: #999;
+    font-size: 20px;
+}
+
+.search button {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 16px;
+    background-color: #4e4a59;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 183px;
+    height: 44px;
+}
+
+.search button:hover {
+    background-color: #3d3847;
+}
+.blog {
+    height: 415px;
+    width: 100%;
+    background-color: #3e3b45;
+    padding: 60px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    visibility: visible;
+}
+
+.blog .left {
+    max-width: 270px;
+    margin-left: 170px;
+    color: white;
+    display: block;
+    visibility: visible;
+    flex-shrink: 0;
+}
+
+.blog .left h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #888;
+    width: 270px;
+    height: auto;
+    display: block;
+    visibility: visible;
+}
+
+.blog .left > p:first-of-type {
+    margin-bottom: 15px;
+    line-height: 1.4;
+    color: #888;
+    display: block;
+    visibility: visible;
+    font-size: 12px;
+    width: 270px;
+    height: 100px;
+}
+
+.blog .contact-info {
+    display: flex !important;
+    flex-direction: column;
+    gap: 6px;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative;
+    z-index: 10;
+    margin-top: 0;
+}
+
+.blog .contact-item1 {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-bottom: 3px;
+    padding: 0;
+}
+
+.blog .contact-item1 i {
+    color: #878fd6 !important;
+    font-size: 14px !important;
+    width: 18px;
+    flex-shrink: 0;
+    display: inline-block !important;
+    visibility: visible !important;
+    order: 1;
+}
+
+.blog .contact-item1 p {
+    margin: 0;
+    color: white !important;
+    display: block !important;
+    visibility: visible !important;
+    font-size: 11px;
+    order: 2;
+}
+
+.blog .middlee {
+    max-width: 320px;
+    margin-left: 0;
+    color: white;
+    display: block;
+    visibility: visible;
+    flex-shrink: 0;
+}
+
+.blog .middlee h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #888;
+    width: 320px;
+    height: auto;
+    display: block;
+    visibility: visible;
+}
+
+.blog .blog-info {
+    display: flex !important;
+    flex-direction: column;
+    gap: 20px;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative;
+    z-index: 10;
+    margin-top: 10px;
+}
+
+.blog .item1 {
+    display: flex !important;
+    align-items: flex-start;
+    gap: 12px;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.blog .item1 img {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    order: 1;
+}
+
+.blog .blog-content {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.blog .blog-content a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+.blog .blog-content a:hover {
+    color: #ef595a !important;
+}
+
+.blog .blog-content p {
+    margin: 0;
+    font-size: 11px;
+    color: #888;
+}
+
+.blog .blog-content .author {
+    color: #ef595a !important;
+}
+
+.blog .blog-content .date {
+    color: white !important;
 }
