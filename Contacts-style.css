@@ -1,0 +1,153 @@
+.site-header{
+    background-image: url("https://estate.axiomthemes.com/wp-content/uploads/img_header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 232px;
+    position: relative;
+}
+
+.site-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(32, 36, 43, 0.6);
+    z-index: 1;
+}
+
+.site-header > * {
+    position: relative;
+    z-index: 2;
+}
+
+.line {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    height: 1px;
+    width: 90%;
+    position: absolute;
+    right: 5%;
+    top: 50px;
+    z-index: 2;
+}
+
+.main-content {
+    margin-top: 0;
+}
+
+.contact-item3 {
+    position: absolute !important;
+    right: 200px !important;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    z-index: 1001;
+}
+
+.get-in-touch {
+    display: flex;
+    height: 500px;
+    width: 100%;
+}
+
+.map-section {
+    flex: 1;
+    height: 100%;
+}
+
+.form-section {
+    flex: 1;
+    position: relative;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.location-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.location-icon i {
+    font-size: 80px;
+    color: #999;
+}
+
+.contact-form {
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    padding: 40px;
+    border-radius: 0;
+    box-shadow: none;
+    width: 90%;
+    height: 80%;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form h3 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    background: #f8f9fa;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ef595a;
+    background: white;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ef595a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+    background-color: #d84545;
+}
