@@ -2,113 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Contacts - Estate</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Contacts-style.css">
+    <style>
+        /* Acil yatay scroll düzeltmesi */
+        * { box-sizing: border-box !important; }
+        html, body { overflow-x: hidden !important; max-width: 100vw !important; }
+        .container-fluid { padding: 0 !important; margin: 0 !important; }
+    </style>
 </head>
 
 <body>
 <header class="site-header">
-    <div class="logo-wrapper">
-        <a href="index.html" class="logo-link">
-            <img src="https://estate.axiomthemes.com/wp-content/uploads/logo-header1.jpg" alt="Logo" class="logo-image">
-        </a>
+    <div class="container-fluid p-0">
+        <div class="logo-wrapper">
+            <a href="index.html" class="logo-link">
+                <img src="https://estate.axiomthemes.com/wp-content/uploads/logo-header1.jpg" alt="Logo" class="logo-image img-fluid">
+            </a>
+        </div>
+
+        <div class="contact-bar d-none d-sm-flex">
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>121 King Street, NY, USA</span>
+            </div>
+            <div class="contact-item2">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:contact@gmail.com">contact@gmail.com</a>
+            </div>
+            <div class="contact-item3">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Us: </span>
+                <a href="tel:8001234567" class="phone-link">800 123 45 67</a>
+            </div>
+        </div>
+
+        <nav class="main-menu">
+            <!-- Hamburger Button -->
+            <button class="hamburger-btn d-md-none" type="button" id="hamburgerToggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Menu List -->
+            <ul class="menu-list" id="menuList">
+                <li class="menu-item dropdown">
+                    <a href="index.html#home" class="dropdown-toggle">
+                        Home <i class="fa-solid fa-caret-down d-none d-md-inline"></i>
+                    </a>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html#home-main">Main Page</a></li>
+                        <li><a class="dropdown-item" href="index.html#home-modern">Modern Style</a></li>
+                        <li><a class="dropdown-item" href="index.html#home-classic">Classic Style</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item dropdown">
+                    <a href="index.html#features" class="dropdown-toggle">
+                        Features <i class="fa-solid fa-caret-down d-none d-md-inline"></i>
+                    </a>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html#property-search">Property Search</a></li>
+                        <li><a class="dropdown-item" href="index.html#virtual-tour">Virtual Tours</a></li>
+                        <li><a class="dropdown-item" href="index.html#mortgage-calc">Mortgage Calculator</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item dropdown">
+                    <a href="index.html#about" class="dropdown-toggle">
+                        About Us <i class="fa-solid fa-caret-down d-none d-md-inline"></i>
+                    </a>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html#our-story">Our Story</a></li>
+                        <li><a class="dropdown-item" href="index.html#team">Our Team</a></li>
+                        <li><a class="dropdown-item" href="index.html#testimonials">Testimonials</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item dropdown">
+                    <a href="index.html#listing" class="dropdown-toggle">
+                        Listing <i class="fa-solid fa-caret-down d-none d-md-inline"></i>
+                    </a>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html#for-sale">For Sale</a></li>
+                        <li><a class="dropdown-item" href="index.html#for-rent">For Rent</a></li>
+                        <li><a class="dropdown-item" href="index.html#commercial">Commercial</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item dropdown">
+                    <a href="index.html#gallery" class="dropdown-toggle">
+                        Gallery <i class="fa-solid fa-caret-down d-none d-md-inline"></i>
+                    </a>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html#property-photos">Property Photos</a></li>
+                        <li><a class="dropdown-item" href="index.html#video-tours">Video Tours</a></li>
+                        <li><a class="dropdown-item" href="index.html#360-views">360° Views</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item dropdown">
+                    <a href="index.html#blog" class="dropdown-toggle">
+                        Blog <i class="fa-solid fa-caret-down d-none d-md-inline"></i>
+                    </a>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html#latest-news">Latest News</a></li>
+                        <li><a class="dropdown-item" href="index.html#market-trends">Market Trends</a></li>
+                        <li><a class="dropdown-item" href="index.html#buying-tips">Buying Tips</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item active">
+                    <a href="Contacts.html">Contacts</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-
-    <div class="contact-bar">
-        <div class="contact-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>121 King Street, NY, USA</span>
-        </div>
-        <div class="contact-item2">
-            <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:contact@gmail.com">contact@gmail.com</a>
-        </div>
-        <div class="contact-item3">
-            <i class="fa-solid fa-phone"></i>
-            <span>Call Us: </span>
-            <a href="tel:8001234567" class="phone-link">800 123 45 67</a>
-        </div>
-    </div>
-
-    
-
-    <nav class="main-menu">
-        <ul class="menu-list">
-            <li class="menu-item dropdown">
-                <a href="index.html#home" class="dropdown-toggle">
-                    Home <i class="fa-solid fa-caret-down"></i>
-                </a>
-                <ul class="dropdown-menu custom-dropdown-menu">
-                    <li><a class="dropdown-item" href="index.html#home-main">Main Page</a></li>
-                    <li><a class="dropdown-item" href="index.html#home-modern">Modern Style</a></li>
-                    <li><a class="dropdown-item" href="index.html#home-classic">Classic Style</a></li>
-                </ul>
-            </li>
-
-            <li class="menu-item dropdown">
-                <a href="index.html#features" class="dropdown-toggle">
-                    Features <i class="fa-solid fa-caret-down"></i>
-                </a>
-                <ul class="dropdown-menu custom-dropdown-menu">
-                    <li><a class="dropdown-item" href="index.html#property-search">Property Search</a></li>
-                    <li><a class="dropdown-item" href="index.html#virtual-tour">Virtual Tours</a></li>
-                    <li><a class="dropdown-item" href="index.html#mortgage-calc">Mortgage Calculator</a></li>
-                </ul>
-            </li>
-
-            <li class="menu-item dropdown">
-                <a href="index.html#about" class="dropdown-toggle">
-                    About Us <i class="fa-solid fa-caret-down"></i>
-                </a>
-                <ul class="dropdown-menu custom-dropdown-menu">
-                    <li><a class="dropdown-item" href="index.html#our-story">Our Story</a></li>
-                    <li><a class="dropdown-item" href="index.html#team">Our Team</a></li>
-                    <li><a class="dropdown-item" href="index.html#testimonials">Testimonials</a></li>
-                </ul>
-            </li>
-
-            <li class="menu-item dropdown">
-                <a href="index.html#listing" class="dropdown-toggle">
-                    Listing <i class="fa-solid fa-caret-down"></i>
-                </a>
-                <ul class="dropdown-menu custom-dropdown-menu">
-                    <li><a class="dropdown-item" href="index.html#for-sale">For Sale</a></li>
-                    <li><a class="dropdown-item" href="index.html#for-rent">For Rent</a></li>
-                    <li><a class="dropdown-item" href="index.html#commercial">Commercial</a></li>
-                </ul>
-            </li>
-
-            <li class="menu-item dropdown">
-                <a href="index.html#gallery" class="dropdown-toggle">
-                    Gallery <i class="fa-solid fa-caret-down"></i>
-                </a>
-                <ul class="dropdown-menu custom-dropdown-menu">
-                    <li><a class="dropdown-item" href="index.html#property-photos">Property Photos</a></li>
-                    <li><a class="dropdown-item" href="index.html#video-tours">Video Tours</a></li>
-                    <li><a class="dropdown-item" href="index.html#360-views">360° Views</a></li>
-                </ul>
-            </li>
-
-            <li class="menu-item dropdown">
-                <a href="index.html#blog" class="dropdown-toggle">
-                    Blog <i class="fa-solid fa-caret-down"></i>
-                </a>
-                <ul class="dropdown-menu custom-dropdown-menu">
-                    <li><a class="dropdown-item" href="index.html#latest-news">Latest News</a></li>
-                    <li><a class="dropdown-item" href="index.html#market-trends">Market Trends</a></li>
-                    <li><a class="dropdown-item" href="index.html#buying-tips">Buying Tips</a></li>
-                </ul>
-            </li>
-
-            <li class="menu-item">
-                <a href="Contacts.html">Contacts</a>
-            </li>
-        </ul>
-    </nav>
 </header>
 
 <main class="main-content">
@@ -117,7 +131,7 @@
             <div class="house-top">
                 <span class="background-text">CONTAC</span>
                 <div class="location-title">
-                   
+
                     <h1><a href="#">Have a Questions?</a></h1>
                 </div>
                 <p class="location-address">We Can Help You</p>
@@ -154,7 +168,7 @@
             </div>
 
             <div class="house-bottom">
-                
+
             </div>
         </div>
 
@@ -162,16 +176,16 @@
             <img src="https://estate.axiomthemes.com/wp-content/uploads/sarah_doe-570x407.jpg" alt="House Image">
         </div>
     </section>
-    
+
     <div class="get-in-touch">
         <div class="map-section">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2str!4v1640995200000!5m2!1sen!2str" 
-                width="100%" 
-                height="100%" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2str!4v1640995200000!5m2!1sen!2str"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
@@ -342,6 +356,28 @@
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Hamburger Menu Toggle Script
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerBtn = document.getElementById('hamburgerToggle');
+    const menuList = document.getElementById('menuList');
+    
+    if (hamburgerBtn && menuList) {
+        hamburgerBtn.addEventListener('click', function() {
+            menuList.classList.toggle('show');
+            hamburgerBtn.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!hamburgerBtn.contains(event.target) && !menuList.contains(event.target)) {
+                menuList.classList.remove('show');
+                hamburgerBtn.classList.remove('active');
+            }
+        });
+    }
+});
+</script>
 <script src="script.js"></script>
 </body>
 </html>
