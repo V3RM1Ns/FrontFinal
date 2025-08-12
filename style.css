@@ -861,66 +861,194 @@ a:active {
     white-space: nowrap;
 }
 .search{
-    height: 180px;
+    height: auto;
+    min-height: 200px;
     width: 100%;
-    background-color: #5ac4b1;
+    background: linear-gradient(135deg, #5ac4b1 0%, #4db3a1 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 0 20px;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
 }
 
-.search p {
+.search::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%);
+    background-size: 40px 40px;
+    opacity: 0.3;
+    animation: movePattern 20s linear infinite;
+}
+
+@keyframes movePattern {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(40px); }
+}
+
+.signup-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.signup-title {
     color: white;
-    font-size: 22px;
-    font-weight: 300;
-    margin: 0;
-    white-space: nowrap;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 0 0 30px 0;
     letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    animation: fadeInDown 0.8s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .search .input-container {
-    position: relative;
     display: flex;
+    flex-direction: column;
+    gap: 15px;
     align-items: center;
+    animation: fadeInUp 0.8s ease 0.2s both;
 }
 
-.search input {
-    padding: 12px 120px 12px 16px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-    width: 896px;
-    height: 54px;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+.search .email-input {
+    padding: 18px 24px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 50px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
     outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-.search input::placeholder {
-    color: #999;
-    font-size: 20px;
+.search .email-input:focus {
+    border-color: #fff;
+    background: rgba(255,255,255,1);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.3);
 }
 
-.search button {
-    position: absolute;
-    right: 6px;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 8px 16px;
-    background-color: #4e4a59;
-    border: none;
+.search .email-input::placeholder {
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.search .subscribe-btn {
+    position: static;
+    padding: 18px 40px;
+    background: linear-gradient(135deg, #4e4a59 0%, #3d3847 100%);
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 50px;
     color: white;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 183px;
-    height: 44px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: 200px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transform: none;
 }
 
-.search button:hover {
-    background-color: #3d3847;
+.search .subscribe-btn:hover {
+    background: linear-gradient(135deg, #3d3847 0%, #2c2631 100%);
+    border-color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.search .subscribe-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Responsive Design for Search Section */
+@media (max-width: 768px) {
+    .search {
+        padding: 30px 15px;
+        min-height: 180px;
+    }
+    
+    .signup-title {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+    }
+    
+    .search .input-container {
+        gap: 12px;
+    }
+    
+    .search .email-input {
+        padding: 15px 20px;
+        font-size: 15px;
+        max-width: 100%;
+    }
+    
+    .search .subscribe-btn {
+        padding: 15px 30px;
+        font-size: 15px;
+        min-width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search {
+        padding: 25px 10px;
+        min-height: 160px;
+    }
+    
+    .signup-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .search .email-input {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+    
+    .search .subscribe-btn {
+        padding: 12px 25px;
+        font-size: 14px;
+        min-width: 160px;
+    }
 }
 .blog {
     height: 415px;
